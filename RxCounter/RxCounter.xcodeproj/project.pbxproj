@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B009BA0E272D161C00B0CE6E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B009BA0D272D161C00B0CE6E /* ViewModel.swift */; };
+		B009BA10272D162500B0CE6E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B009BA0F272D162500B0CE6E /* Model.swift */; };
+		B009BA12272D162B00B0CE6E /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B009BA11272D162B00B0CE6E /* UseCase.swift */; };
 		B0AB0D7F272963DF00618854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB0D7E272963DF00618854 /* AppDelegate.swift */; };
 		B0AB0D81272963DF00618854 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB0D80272963DF00618854 /* SceneDelegate.swift */; };
 		B0AB0D83272963DF00618854 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB0D82272963DF00618854 /* ViewController.swift */; };
 		B0AB0D86272963DF00618854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AB0D84272963DF00618854 /* Main.storyboard */; };
-		B0AB0D89272963DF00618854 /* RxCounter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0AB0D87272963DF00618854 /* RxCounter.xcdatamodeld */; };
 		B0AB0D8B272963E100618854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0AB0D8A272963E100618854 /* Assets.xcassets */; };
 		B0AB0D8E272963E100618854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AB0D8C272963E100618854 /* LaunchScreen.storyboard */; };
+		F15650288D18E46B2B33F6C7 /* Pods_RxCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0F71690C64284A2F3FD9CF /* Pods_RxCounter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2ACC4CE8FAE356B9E90C83E5 /* Pods-RxCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCounter.release.xcconfig"; path = "Target Support Files/Pods-RxCounter/Pods-RxCounter.release.xcconfig"; sourceTree = "<group>"; };
+		8C0F71690C64284A2F3FD9CF /* Pods_RxCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B009BA0D272D161C00B0CE6E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B009BA0F272D162500B0CE6E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B009BA11272D162B00B0CE6E /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		B0AB0D7B272963DF00618854 /* RxCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AB0D7E272963DF00618854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0AB0D80272963DF00618854 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B0AB0D82272963DF00618854 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0AB0D85272963DF00618854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B0AB0D88272963DF00618854 /* RxCounter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxCounter.xcdatamodel; sourceTree = "<group>"; };
 		B0AB0D8A272963E100618854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0AB0D8D272963E100618854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0AB0D8F272963E100618854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FF7D7EE7455FA834D582BA /* Pods-RxCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCounter.debug.xcconfig"; path = "Target Support Files/Pods-RxCounter/Pods-RxCounter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15650288D18E46B2B33F6C7 /* Pods_RxCounter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FBBD001D012C2EED6A71C81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3FF7D7EE7455FA834D582BA /* Pods-RxCounter.debug.xcconfig */,
+				2ACC4CE8FAE356B9E90C83E5 /* Pods-RxCounter.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		47A243022E1C7FD8845F3863 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C0F71690C64284A2F3FD9CF /* Pods_RxCounter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B009BA13272D1EBB00B0CE6E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB0D7E272963DF00618854 /* AppDelegate.swift */,
+				B0AB0D80272963DF00618854 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B009BA14272D1EC600B0CE6E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB0D84272963DF00618854 /* Main.storyboard */,
+				B0AB0D8A272963E100618854 /* Assets.xcassets */,
+				B0AB0D8C272963E100618854 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B009BA15272D1EDF00B0CE6E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB0D82272963DF00618854 /* ViewController.swift */,
+				B009BA0D272D161C00B0CE6E /* ViewModel.swift */,
+				B009BA0F272D162500B0CE6E /* Model.swift */,
+				B009BA11272D162B00B0CE6E /* UseCase.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		B0AB0D72272963DF00618854 = {
 			isa = PBXGroup;
 			children = (
 				B0AB0D7D272963DF00618854 /* RxCounter */,
 				B0AB0D7C272963DF00618854 /* Products */,
+				0FBBD001D012C2EED6A71C81 /* Pods */,
+				47A243022E1C7FD8845F3863 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +116,10 @@
 		B0AB0D7D272963DF00618854 /* RxCounter */ = {
 			isa = PBXGroup;
 			children = (
-				B0AB0D7E272963DF00618854 /* AppDelegate.swift */,
-				B0AB0D80272963DF00618854 /* SceneDelegate.swift */,
-				B0AB0D82272963DF00618854 /* ViewController.swift */,
-				B0AB0D84272963DF00618854 /* Main.storyboard */,
-				B0AB0D8A272963E100618854 /* Assets.xcassets */,
-				B0AB0D8C272963E100618854 /* LaunchScreen.storyboard */,
 				B0AB0D8F272963E100618854 /* Info.plist */,
-				B0AB0D87272963DF00618854 /* RxCounter.xcdatamodeld */,
+				B009BA13272D1EBB00B0CE6E /* Application */,
+				B009BA14272D1EC600B0CE6E /* Resource */,
+				B009BA15272D1EDF00B0CE6E /* Source */,
 			);
 			path = RxCounter;
 			sourceTree = "<group>";
@@ -77,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0AB0D92272963E100618854 /* Build configuration list for PBXNativeTarget "RxCounter" */;
 			buildPhases = (
+				EA6843298A9BB73F0BD825B6 /* [CP] Check Pods Manifest.lock */,
 				B0AB0D77272963DF00618854 /* Sources */,
 				B0AB0D78272963DF00618854 /* Frameworks */,
 				B0AB0D79272963DF00618854 /* Resources */,
+				30E44FE0E25B5A6BE28E42FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,13 +192,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30E44FE0E25B5A6BE28E42FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxCounter/Pods-RxCounter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxCounter/Pods-RxCounter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxCounter/Pods-RxCounter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA6843298A9BB73F0BD825B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxCounter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B0AB0D77272963DF00618854 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0AB0D89272963DF00618854 /* RxCounter.xcdatamodeld in Sources */,
+				B009BA0E272D161C00B0CE6E /* ViewModel.swift in Sources */,
 				B0AB0D83272963DF00618854 /* ViewController.swift in Sources */,
+				B009BA10272D162500B0CE6E /* Model.swift in Sources */,
+				B009BA12272D162B00B0CE6E /* UseCase.swift in Sources */,
 				B0AB0D7F272963DF00618854 /* AppDelegate.swift in Sources */,
 				B0AB0D81272963DF00618854 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,6 +388,7 @@
 		};
 		B0AB0D93272963E100618854 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3FF7D7EE7455FA834D582BA /* Pods-RxCounter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +416,7 @@
 		};
 		B0AB0D94272963E100618854 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ACC4CE8FAE356B9E90C83E5 /* Pods-RxCounter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -362,19 +464,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B0AB0D87272963DF00618854 /* RxCounter.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B0AB0D88272963DF00618854 /* RxCounter.xcdatamodel */,
-			);
-			currentVersion = B0AB0D88272963DF00618854 /* RxCounter.xcdatamodel */;
-			path = RxCounter.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B0AB0D73272963DF00618854 /* Project object */;
 }
