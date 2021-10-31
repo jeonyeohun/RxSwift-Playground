@@ -17,8 +17,13 @@ https://user-images.githubusercontent.com/46087477/139527358-51b50eb1-8229-4e5d-
 ## E3 - RxValidator 
 - BehaviorSubject
 - RxCocoa
-- bind
+- Bind
 - Observe On
 
 https://user-images.githubusercontent.com/46087477/139527357-27441dbe-2bd1-4c4a-bbe1-a2b298be60c8.mp4
 
+## E4 - RxImageDownloader
+- BehaviorSubject
+- Bind
+- Create Observable
+- CombineLastest
