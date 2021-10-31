@@ -24,9 +24,11 @@ https://user-images.githubusercontent.com/46087477/139527357-27441dbe-2bd1-4c4a-
 
 ## E4 - RxImageDownloader
 - BehaviorSubject
+- RxCocoa
 - Bind
 - Create Observable
-- CombineLastest
+- CombineLatest
+- MVVM
 
 https://user-images.githubusercontent.com/46087477/139576483-9566e05e-ec71-4d31-a239-2f438804de52.mp4
 
