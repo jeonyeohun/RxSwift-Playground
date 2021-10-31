@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52D1F666912656B29A9E526C /* Pods_RxImageDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7860C633DBDE3110643F71CF /* Pods_RxImageDownloader.framework */; };
+		B03927C1272E68CD00431BE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03927C0272E68CD00431BE0 /* AppDelegate.swift */; };
+		B03927C3272E68CD00431BE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03927C2272E68CD00431BE0 /* SceneDelegate.swift */; };
+		B03927C5272E68CD00431BE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03927C4272E68CD00431BE0 /* ViewController.swift */; };
+		B03927C8272E68CD00431BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03927C6272E68CD00431BE0 /* Main.storyboard */; };
+		B03927CA272E68CE00431BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03927C9272E68CE00431BE0 /* Assets.xcassets */; };
+		B03927CD272E68CE00431BE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03927CB272E68CE00431BE0 /* LaunchScreen.storyboard */; };
+		B03927DE272E8AC000431BE0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03927DD272E8AC000431BE0 /* ViewModel.swift */; };
+		B03927E0272E8ACF00431BE0 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03927DF272E8ACF00431BE0 /* UseCase.swift */; };
+		B03927E2272E8AE300431BE0 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03927E1272E8AE300431BE0 /* Repository.swift */; };
+		B03927E4272E8AF200431BE0 /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03927E3272E8AF200431BE0 /* NetworkServiceMock.swift */; };
+		B03927E6272E8B0800431BE0 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03927E5272E8B0800431BE0 /* NetworkServiceProtocol.swift */; };
+		B03927E9272E900100431BE0 /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03927E8272E900100431BE0 /* RepositoryProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F7E125F66C7D9FE808E7909 /* Pods-RxImageDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxImageDownloader.release.xcconfig"; path = "Target Support Files/Pods-RxImageDownloader/Pods-RxImageDownloader.release.xcconfig"; sourceTree = "<group>"; };
+		7860C633DBDE3110643F71CF /* Pods_RxImageDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxImageDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F74F4584D7A9326A09F5210 /* Pods-RxImageDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxImageDownloader.debug.xcconfig"; path = "Target Support Files/Pods-RxImageDownloader/Pods-RxImageDownloader.debug.xcconfig"; sourceTree = "<group>"; };
+		B03927BD272E68CD00431BE0 /* RxImageDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxImageDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B03927C0272E68CD00431BE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B03927C2272E68CD00431BE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B03927C4272E68CD00431BE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B03927C7272E68CD00431BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B03927C9272E68CE00431BE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B03927CC272E68CE00431BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B03927CE272E68CE00431BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B03927DD272E8AC000431BE0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B03927DF272E8ACF00431BE0 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		B03927E1272E8AE300431BE0 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		B03927E3272E8AF200431BE0 /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
+		B03927E5272E8B0800431BE0 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		B03927E8272E900100431BE0 /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B03927BA272E68CD00431BE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D1F666912656B29A9E526C /* Pods_RxImageDownloader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40422F7B7956D16E53DB8465 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F74F4584D7A9326A09F5210 /* Pods-RxImageDownloader.debug.xcconfig */,
+				0F7E125F66C7D9FE808E7909 /* Pods-RxImageDownloader.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9DB4DB85E3F5878C16F772B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7860C633DBDE3110643F71CF /* Pods_RxImageDownloader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B03927B4272E68CD00431BE0 = {
+			isa = PBXGroup;
+			children = (
+				B03927BF272E68CD00431BE0 /* RxImageDownloader */,
+				B03927BE272E68CD00431BE0 /* Products */,
+				40422F7B7956D16E53DB8465 /* Pods */,
+				9DB4DB85E3F5878C16F772B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B03927BE272E68CD00431BE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B03927BD272E68CD00431BE0 /* RxImageDownloader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B03927BF272E68CD00431BE0 /* RxImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				B03927D7272E69FA00431BE0 /* Source */,
+				B03927D5272E69ED00431BE0 /* Application */,
+				B03927D4272E69E700431BE0 /* Resource */,
+				B03927CE272E68CE00431BE0 /* Info.plist */,
+			);
+			path = RxImageDownloader;
+			sourceTree = "<group>";
+		};
+		B03927D4272E69E700431BE0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B03927E7272E8D5200431BE0 /* MockResource */,
+				B03927C6272E68CD00431BE0 /* Main.storyboard */,
+				B03927C9272E68CE00431BE0 /* Assets.xcassets */,
+				B03927CB272E68CE00431BE0 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B03927D5272E69ED00431BE0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B03927C0272E68CD00431BE0 /* AppDelegate.swift */,
+				B03927C2272E68CD00431BE0 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B03927D7272E69FA00431BE0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B03927C4272E68CD00431BE0 /* ViewController.swift */,
+				B03927DD272E8AC000431BE0 /* ViewModel.swift */,
+				B03927DF272E8ACF00431BE0 /* UseCase.swift */,
+				B03927E1272E8AE300431BE0 /* Repository.swift */,
+				B03927E3272E8AF200431BE0 /* NetworkServiceMock.swift */,
+				B03927E5272E8B0800431BE0 /* NetworkServiceProtocol.swift */,
+				B03927E8272E900100431BE0 /* RepositoryProtocol.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B03927E7272E8D5200431BE0 /* MockResource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MockResource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B03927BC272E68CD00431BE0 /* RxImageDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B03927D1272E68CE00431BE0 /* Build configuration list for PBXNativeTarget "RxImageDownloader" */;
+			buildPhases = (
+				23878E695ABBF638971DE79A /* [CP] Check Pods Manifest.lock */,
+				B03927B9272E68CD00431BE0 /* Sources */,
+				B03927BA272E68CD00431BE0 /* Frameworks */,
+				B03927BB272E68CD00431BE0 /* Resources */,
+				DD5E7D4A24D3D58AB6C2EF8B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxImageDownloader;
+			productName = RxImageDownloader;
+			productReference = B03927BD272E68CD00431BE0 /* RxImageDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B03927B5272E68CD00431BE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					B03927BC272E68CD00431BE0 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = B03927B8272E68CD00431BE0 /* Build configuration list for PBXProject "RxImageDownloader" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B03927B4272E68CD00431BE0;
+			productRefGroup = B03927BE272E68CD00431BE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B03927BC272E68CD00431BE0 /* RxImageDownloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B03927BB272E68CD00431BE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03927CD272E68CE00431BE0 /* LaunchScreen.storyboard in Resources */,
+				B03927CA272E68CE00431BE0 /* Assets.xcassets in Resources */,
+				B03927C8272E68CD00431BE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23878E695ABBF638971DE79A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxImageDownloader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD5E7D4A24D3D58AB6C2EF8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxImageDownloader/Pods-RxImageDownloader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxImageDownloader/Pods-RxImageDownloader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxImageDownloader/Pods-RxImageDownloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B03927B9272E68CD00431BE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03927E0272E8ACF00431BE0 /* UseCase.swift in Sources */,
+				B03927C5272E68CD00431BE0 /* ViewController.swift in Sources */,
+				B03927C1272E68CD00431BE0 /* AppDelegate.swift in Sources */,
+				B03927DE272E8AC000431BE0 /* ViewModel.swift in Sources */,
+				B03927E6272E8B0800431BE0 /* NetworkServiceProtocol.swift in Sources */,
+				B03927C3272E68CD00431BE0 /* SceneDelegate.swift in Sources */,
+				B03927E2272E8AE300431BE0 /* Repository.swift in Sources */,
+				B03927E4272E8AF200431BE0 /* NetworkServiceMock.swift in Sources */,
+				B03927E9272E900100431BE0 /* RepositoryProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B03927C6272E68CD00431BE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B03927C7272E68CD00431BE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B03927CB272E68CE00431BE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B03927CC272E68CE00431BE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B03927CF272E68CE00431BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B03927D0272E68CE00431BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B03927D2272E68CE00431BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F74F4584D7A9326A09F5210 /* Pods-RxImageDownloader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RxImageDownloader/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.jeonyeohun.RxImageDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B03927D3272E68CE00431BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F7E125F66C7D9FE808E7909 /* Pods-RxImageDownloader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RxImageDownloader/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.jeonyeohun.RxImageDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B03927B8272E68CD00431BE0 /* Build configuration list for PBXProject "RxImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B03927CF272E68CE00431BE0 /* Debug */,
+				B03927D0272E68CE00431BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B03927D1272E68CE00431BE0 /* Build configuration list for PBXNativeTarget "RxImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B03927D2272E68CE00431BE0 /* Debug */,
+				B03927D3272E68CE00431BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B03927B5272E68CD00431BE0 /* Project object */;
+}

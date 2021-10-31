@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxImageDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZNf-1e-hxz">
+                                <rect key="frame" x="87" y="327" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="3Ri-Mb-J6M"/>
+                                    <constraint firstAttribute="width" constant="240" id="iU4-qB-et1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEX-Vv-nJt">
+                                <rect key="frame" x="170" y="522" width="74.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hkz-hx-l0v">
+                                <rect key="frame" x="87" y="162" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="AeH-SI-e7z"/>
+                                    <constraint firstAttribute="height" constant="128" id="qUm-VF-Qci"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZNf-1e-hxz" firstAttribute="top" secondItem="Hkz-hx-l0v" secondAttribute="bottom" constant="37" id="5rN-HR-I5P"/>
+                            <constraint firstItem="WEX-Vv-nJt" firstAttribute="top" secondItem="ZNf-1e-hxz" secondAttribute="bottom" constant="67" id="8yD-Sg-IQ1"/>
+                            <constraint firstItem="Hkz-hx-l0v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="FEb-Iz-SpS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hkz-hx-l0v" secondAttribute="trailing" constant="87" id="HfS-o7-6Vh"/>
+                            <constraint firstItem="Hkz-hx-l0v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="KWN-Oc-bWo"/>
+                            <constraint firstItem="ZNf-1e-hxz" firstAttribute="leading" secondItem="Hkz-hx-l0v" secondAttribute="leading" id="S3i-ft-vRJ"/>
+                            <constraint firstItem="Hkz-hx-l0v" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZsS-Rl-cSQ"/>
+                            <constraint firstItem="WEX-Vv-nJt" firstAttribute="centerX" secondItem="ZNf-1e-hxz" secondAttribute="centerX" id="ibd-02-YKb"/>
+                            <constraint firstItem="ZNf-1e-hxz" firstAttribute="trailing" secondItem="Hkz-hx-l0v" secondAttribute="trailing" id="sSa-S0-olV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstImage" destination="Hkz-hx-l0v" id="otS-di-LXc"/>
+                        <outlet property="resultLabel" destination="WEX-Vv-nJt" id="V6H-WQ-nDP"/>
+                        <outlet property="secondImage" destination="ZNf-1e-hxz" id="OKM-H8-d0r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
